@@ -340,7 +340,7 @@ footer {
 
 /* CONTACT FORM STYLES - Added for contact form functionality */
 .contact-form {
-    background: white;
+    background: #34495e;
     border-radius: 8px;
     padding: 40px;
     margin-top: 40px;
@@ -445,7 +445,7 @@ footer {
 
 /* Contact form submit button */
 .contact-submit-btn {
-    background: #7877c6;
+    background: #3498db;
     color: white;
     padding: 12px 32px;
     border: none;
@@ -459,7 +459,7 @@ footer {
 }
 
 .contact-submit-btn:hover {
-    background: #6b6ab8;
+    background: #2980b9;
     transform: translateY(-1px);
 }
 
