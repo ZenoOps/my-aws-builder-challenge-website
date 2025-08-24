@@ -13,29 +13,38 @@
             <img src="profile-photo.jpg" alt="Kyaw Soe Thet" class="profile-photo">
             <h1>Kyaw Soe Thet</h1>
             <p class="tagline">AWS DevOps Enthusiast & Sr. NOC </p>
+            <div class="hero-social-icons">
+                <a href="https://github.com/ZenoOps" target="_blank" aria-label="GitHub" class="hero-social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kyaw-soe-thet" target="_blank" aria-label="LinkedIn" class="hero-social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:kyawsoe.thet27@gmail.com?subject=Contact%20from%20Portfolio%20Website" aria-label="Email" class="hero-social-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+        <script>
+        // Typing animation for tagline
+        document.addEventListener('DOMContentLoaded', function() {
+            const tagline = document.querySelector('.tagline');
+            const text = 'AWS DevOps Enthusiast & Sr. NOC';
+            tagline.textContent = '';
+            let i = 0;
+            function type() {
+                if (i < text.length) {
+                    tagline.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, 60);
+                }
+            }
+            type();
+        });
+        </script>
             <a href="https://builder.aws.com/community/zeno" target="_blank" class="aws-link">AWS Builder Center Profile</a>
-            <a href="resume.pdf" download class="resume-button" aria-label="Download Kyaw Soe Thet's resume">
+            <a href="resume.pdf" download class="aws-link" aria-label="Download Kyaw Soe Thet's resume">
                 <i class="fas fa-download"></i> Download Resume
             </a>
         </section>
 
-        <section class="fun-facts">
-            <h3>Facts About Me</h3>
-            <div class="facts-grid">
-                <div class="fact-card">
-                    <h4>💡 Collaborative individual </h4>
-                    <p>Collaborated on freelance projects, providing designs and scalable deployment solutions using AWS and various tech stacks.</p>
-                </div>
-                <div class="fact-card">
-                    <h4>🚀 Self-starter</h4>
-                    <p>As a self-starter, I am committed to continuous learning and proactively building my expertise. I am currently expanding my skill set with new technologies to strengthen my proficiency in my interested field.</p>
-                </div>
-                <div class="fact-card">
-                    <h4>🎯 AWS journey</h4>
-                    <p>I started my AWS Cloud journey through the AWS re/Start program. It has been an exciting experience, and I've been incredibly motivated to dive into new AWS services and technologies related to the field of my interest ever since.</p>
-                </div>
-            </div>
-        </section>
+        
+
+
+        
 
         <section class="aws-journey">
             <h3>AWS Builder Challenge #2</h3>
@@ -43,23 +52,281 @@
             <a href="https://builder.aws.com/content/31C2WxIDSQive7q2Dv5xNFCmYJj/aws-builder-challenge-2-build-a-website-on-the-cloud?trk=86c76c09-e8f4-4138-badc-604ce7bc5d77&sc_channel=el" target="_blank" class="cta-button">View Challenge Details</a>
         </section>
 
-        <section class="social-links">
-            <h3>Connect With Me</h3>
-            <div class="social-grid">
-                <a href="https://www.linkedin.com/in/kyaw-soe-thet" target="_blank" class="social-icon">
-                    <i class="fab fa-linkedin"></i>
-                    LinkedIn
-                </a>
-                <a href="https://github.com/ZenoOps" target="_blank" class="social-icon">
-                    <i class="fab fa-github"></i>
-                    GitHub
-                </a>
-                <a href="mailto:kyawsoe.thet27@gmail.com?subject=Contact%20from%20Portfolio%20Website" class="social-icon">
-                    <i class="fas fa-envelope"></i>
-                    Email
-                </a>
+        <section class="projects">
+            <h3>Projects</h3>
+            <div class="projects-grid">
+                <!-- Project 1 Card -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1647880149617-8c11e7426c20?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="AWS Cloud Portfolio" class="project-image">
+                    <div class="project-content">
+                        <h4>AWS Cloud Portfolio</h4>
+                        <h5>Personal Portfolio Website on AWS Amplify</h5>
+                        <p>This project showcases my personal portfolio, built with HTML, CSS, and hosted on AWS Amplify. It demonstrates my skills in cloud deployment and static site hosting.</p>
+                        <ul class="project-keypoints">
+                            <li>Deployed using AWS Amplify</li>
+                            <li>Responsive, modern UI</li>
+                            <li>Custom domain & SSL</li>
+                        </ul>
+                        <a href="https://your-portfolio-link.com" target="_blank" class="project-link-btn">View Project</a>
+                    </div>
+                </div>
+                <!-- Project 2 Card -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1704204656144-3dd12c110dd8?q=80&w=1618&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="DevOps Automation Toolkit" class="project-image">
+                    <div class="project-content">
+                        <h4>DevOps Automation Toolkit</h4>
+                        <h5>CI/CD Pipeline with GitHub Actions & AWS</h5>
+                        <p>A toolkit for automating deployments using GitHub Actions and AWS services. It streamlines code delivery and infrastructure provisioning for cloud-native applications.</p>
+                        <ul class="project-keypoints">
+                            <li>Automated build & deploy</li>
+                            <li>Infrastructure as Code (IaC)</li>
+                            <li>Integrated monitoring & notifications</li>
+                        </ul>
+                        <a href="https://github.com/ZenoOps/devops-toolkit" target="_blank" class="project-link-btn">View Project</a>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <section class="volunteer-work">
+            <h3>Volunteer Work</h3>
+            <div class="volunteer-list">
+                <div class="volunteer-item">
+                    <h4><i class="fas fa-hands-helping"></i> AWS Community Day Volunteer</h4>
+                    <span class="volunteer-role">Event Support & Tech Mentor</span>
+                    <span class="volunteer-date">2024</span>
+                    <p>Assisted in organizing AWS Community Day, mentored new learners, and helped with hands-on cloud workshops.</p>
+                </div>
+                <div class="volunteer-item">
+                    <h4><i class="fas fa-users"></i> Local Coding Bootcamp</h4>
+                    <span class="volunteer-role">Guest Instructor</span>
+                    <span class="volunteer-date">2023</span>
+                    <p>Taught introductory cloud and DevOps concepts to aspiring developers in my community.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="timeline">
+            <h3>Timeline / Career Journey</h3>
+            <div class="timeline-list">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2025</span>
+                        <span class="timeline-title">Sr. NOC & DevOps Enthusiast</span>
+                        <p>Promoted to Senior NOC, leading cloud automation and monitoring initiatives.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2024</span>
+                        <span class="timeline-title">AWS Certified Solutions Architect</span>
+                        <p>Achieved AWS certification and contributed to major cloud migration projects.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2023</span>
+                        <span class="timeline-title">AWS re/Start Graduate</span>
+                        <p>Completed AWS re/Start and began my journey in cloud and DevOps roles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="aws-mindmap">
+            <div class="mindmap-center-label">Skills</div>
+            <div class="mindmap-categories">
+                <div class="mindmap-category compute">
+                    <div class="category-label">Compute</div>
+                    <ul>
+                        <li>EC2</li>
+                        <li>Lambda</li>
+                        <li>ECS</li>
+                    </ul>
+                </div>
+                <div class="mindmap-category storage">
+                    <div class="category-label">Storage</div>
+                    <ul>
+                        <li>S3</li>
+                        <li>EBS</li>
+                        <li>Glacier</li>
+                    </ul>
+                </div>
+                <div class="mindmap-category database">
+                    <div class="category-label">Database</div>
+                    <ul>
+                        <li>RDS</li>
+                        <li>DynamoDB</li>
+                        <li>ElastiCache</li>
+                    </ul>
+                </div>
+                <div class="mindmap-category app-integration">
+                    <div class="category-label">Application Integration</div>
+                    <ul>
+                        <li>SNS</li>
+                        <li>SQS</li>
+                        <li>Step Functions</li>
+                    </ul>
+                </div>
+                <div class="mindmap-category analytics">
+                    <div class="category-label">Analytics</div>
+                    <ul>
+                        <li>Redshift</li>
+                        <li>Athena</li>
+                        <li>EMR</li>
+                    </ul>
+                </div>
+                <div class="mindmap-category dev-tools">
+                    <div class="category-label">Developer Tools</div>
+                    <ul>
+                        <li>CodeCommit</li>
+                        <li>CodeBuild</li>
+                        <li>CodeDeploy</li>
+                        <li>Elastic Beanstalk</li>
+                    </ul>
+                </div>
+                <div class="mindmap-category deploy-mgmt">
+                    <div class="category-label">Deployment & Management</div>
+                    <ul>
+                        <li>CloudFormation</li>
+                        <li>OpsWorks</li>
+                        <li>Systems Manager</li>
+                    </ul>
+                </div>
+                <div class="mindmap-category mgmt-tools">
+                    <div class="category-label">Management Tools</div>
+                    <ul>
+                        <li>CloudWatch</li>
+                        <li>CloudTrail</li>
+                        <li>AWS Config</li>
+                    </ul>
+                </div>
+                <div class="mindmap-category security">
+                    <div class="category-label">Security</div>
+                    <ul>
+                        <li>IAM</li>
+                        <li>Cognito</li>
+                        <li>KMS</li>
+                    </ul>
+                </div>
+                <div class="mindmap-category networking">
+                    <div class="category-label">Networking</div>
+                    <ul>
+                        <li>VPC</li>
+                        <li>CloudFront</li>
+                        <li>Route 53</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+         <section class="certifications-awards">
+            <h3>Certifications & Awards</h3>
+            <div class="badges-grid">
+                
+                <div class="badge-item">
+                    <img src="https://img.icons8.com/ios-filled/100/000000/trophy.png" alt="Top Performer">
+                    <div class="badge-label">Top Performer</div>
+                </div>
+                <div class="badge-item">
+                    <img src="https://img.icons8.com/ios-filled/100/000000/trophy.png" alt="Top Performer">
+                    <div class="badge-label">Top Performer</div>
+                </div>
+                <div class="badge-item">
+                    <img src="https://img.icons8.com/ios-filled/100/000000/trophy.png" alt="Top Performer">
+                    <div class="badge-label">Top Performer</div>
+                </div>
+                <div class="badge-item">
+                    <img src="https://img.icons8.com/ios-filled/100/000000/trophy.png" alt="Top Performer">
+                    <div class="badge-label">Top Performer</div>
+                </div>
+                <div class="badge-item">
+                    <img src="https://img.icons8.com/ios-filled/100/000000/trophy.png" alt="Top Performer">
+                    <div class="badge-label">Top Performer</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h3>FAQ</h3>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What AWS services are you most experienced with?</span>
+                        <i class="fas fa-chevron-down faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I have hands-on experience with EC2, S3, Lambda, CloudFormation, Amplify, and more.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Do you contribute to open source?</span>
+                        <i class="fas fa-chevron-down faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! I enjoy contributing to DevOps and cloud automation projects on GitHub.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Are you open to freelance or collaboration?</span>
+                        <i class="fas fa-chevron-down faq-chevron"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. I’m always interested in new projects and collaborations in the cloud and DevOps space.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+        // FAQ accordion functionality
+        document.addEventListener('DOMContentLoaded', function() {
+          document.querySelectorAll('.faq-question').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+              const expanded = btn.getAttribute('aria-expanded') === 'true';
+              document.querySelectorAll('.faq-question').forEach(b => b.setAttribute('aria-expanded', 'false'));
+              document.querySelectorAll('.faq-answer').forEach(a => a.style.maxHeight = null);
+              if (!expanded) {
+                btn.setAttribute('aria-expanded', 'true');
+                const answer = btn.nextElementSibling;
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+              }
+            });
+          });
+        });
+        </script>
+
+        <section class="testimonials">
+            <h3>Testimonials</h3>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">“Kyaw is a dedicated and resourceful DevOps engineer. His AWS expertise and positive attitude made a huge impact on our project’s success.”</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Aung Min</span>
+                        <span class="author-role">Cloud Solutions Architect</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">“A true self-starter! Kyaw’s ability to learn new technologies and deliver results is outstanding.”</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Soe Yu</span>
+                        <span class="author-role">Senior Developer</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">“His collaborative spirit and technical skills make him a valuable team member. Highly recommended!”</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Mya Hnin</span>
+                        <span class="author-role">Project Manager</span>
+                    </div>
+                </div>
+            </div>
+        </section>   
 
         <section class="contact-form">
             <h3>Get In Touch</h3>
@@ -83,7 +350,7 @@
                 <!-- Contact form submit button -->
                 <button type="submit" class="contact-submit-btn">Send Message</button>
             </form>
-        </section>
+        </section>     
     </main>
 
     <footer>
