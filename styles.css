@@ -899,6 +899,7 @@ footer {
 .contact-form {
     background: #34495e;
     border-radius: 12px;
+    font-size: 36px;
     padding: 40px;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -912,6 +913,15 @@ footer {
     max-width: 500px;
     margin: 0 auto;
     margin-top: 20px;
+}
+
+.contact-form h3 {
+    color: #ecf0f1;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    letter-spacing: -0.02em;
+    text-align: left;
 }
 
 .form-group {
@@ -968,12 +978,12 @@ footer {
     /* Contact form mobile styles */
     .contact-form {
         padding: 24px;
-    }
+    }   
 
     /* Contact form mobile heading */
     .contact-form h3 {
         font-size: 24px;
-    }
+}
 }
 
 @media (max-width: 768px) {
@@ -1338,6 +1348,15 @@ footer {
     font-size: 17px;
     font-weight: 500;
     margin-bottom: 14px;
+}
+
+.contact-form p {
+    color: #bdc3c7;
+    text-align: left;
+    font-size: 20px;      /* Make the text bigger */
+    margin-bottom: 18px;  /* Slightly less space below */
+    margin-top: -12px;    /* Move it closer to the header */
+    font-weight: 500;
 }
 
 .project-content p {
